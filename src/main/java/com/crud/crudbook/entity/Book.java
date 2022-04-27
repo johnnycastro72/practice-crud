@@ -1,9 +1,12 @@
 package com.crud.crudbook.entity;
 
 import lombok.Data;
-import org.springframework.lang.Nullable;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
 
 @Entity(name = "Book")
 @Table(name = "book")

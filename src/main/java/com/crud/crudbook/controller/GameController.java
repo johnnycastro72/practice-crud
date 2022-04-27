@@ -3,7 +3,14 @@ package com.crud.crudbook.controller;
 import com.crud.crudbook.entity.Game;
 import com.crud.crudbook.service.GameServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -24,7 +31,7 @@ public class GameController {
         return service.saveGame(game);
     }
 
-    @PostMapping("update/game")
+    @PutMapping("update/game")
     public Game updateGame(@RequestBody Game game) {
         return service.updateGame(game);
     }
