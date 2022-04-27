@@ -2,7 +2,6 @@ package com.crud.crudbook.service;
 
 import com.crud.crudbook.entity.Book;
 import com.crud.crudbook.repository.BookRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
