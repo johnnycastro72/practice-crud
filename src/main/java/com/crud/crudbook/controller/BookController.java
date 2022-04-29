@@ -22,22 +22,22 @@ public class BookController {
     private BookServiceInterface service;
 
     @GetMapping("get/books")
-    public List<Book> getAllBooks(){
+    public List<Book> getAllBooks() {
         return service.getAllBooks();
     }
 
     @PostMapping("save/book")
-    public Book saveBook(@RequestBody Book book){
+    public Book saveBook(@RequestBody Book book) {
         return service.saveBook(book);
     }
 
     @PutMapping("update/book")
-    public Book updateBook(@RequestBody Book book){
+    public Book updateBook(@RequestBody Book book) {
         return service.updateBook(book);
     }
 
     @DeleteMapping("delete/book/{id}")
-    public void deleteBook(@PathVariable Long id){
+    public void deleteBook(@PathVariable Long id) {
         service.deleteBook(id);
     }
 
